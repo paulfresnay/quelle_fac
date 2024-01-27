@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quelle fac - Tour en cours</title>
+</head>
+<body>
+    <h1>Tour {{ tour_actuel }} / {{ nombre_de_tours }}</h1>
+    <p>Points : {{ points }}</p>
+    <p>Dans quelle université a étudié {{ player_name }} ?</p>
+    <form action="/check_answer" method="post">
+        <input type="text" name="user_guess" required>
+        <button type="submit">Valider</button>
+    </form>
+</body>
+</html>
