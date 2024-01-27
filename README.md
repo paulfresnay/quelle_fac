@@ -16,7 +16,7 @@ Pour pouvoir jouer, suivez les instructions suivantes.
 8. Attendez de voir apparaître le message suivant :
   * Serving Flask app 'nba_game'
   * Debug mode: on
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+  WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
   * Running on http://127.0.0.1:5000
 9. Ouvrez un navigateur web et tapez "http://127.0.0.1:5000" dans la barre d'adresse
 10. Vous pouvez commencer à jouer ! 
