@@ -13,10 +13,6 @@ Pour pouvoir jouer, suivez les instructions suivantes.
 5. Cliquez sur la flèche sur le côté du bouton vert "Code" et sélectionnez "Download ZIP"
 6. Extrayez le contenu du fichier.zip dans le dossier créé à l'étape 3
 7. Lancez le fichier nba_game via votre éditeur de code (ou votre invite de commande si vous n'en avez pas téléchargé)
-8. Attendez de voir apparaître le message suivant :
-  * Serving Flask app 'nba_game'
-  * Debug mode: on
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
-  * Running on http://127.0.0.1:5000
+8. Attendez de voir apparaître le message "Running on http://127.0.0.1:5000"
 9. Ouvrez un navigateur web et tapez "http://127.0.0.1:5000" dans la barre d'adresse
 10. Vous pouvez commencer à jouer ! 
