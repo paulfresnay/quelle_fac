@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quelle fac - Vérification de la réponse</title>
+</head>
+<body>
+    <h1>Vérification de la réponse</h1>
+    <p>Réponse du joueur : {{ request.form.get('user_guess') }}</p>
+    {% if resultat.correct %}
+        <p>Correct ! +1 point.</p>
+    {% else %}
+        <p>Incorrect. La réponse correcte est : {{ resultat.universite_attendue }}.</p>
+    {% endif %}
+    <form action="/play" method="post">
+        <button type="submit">Tour suivant</button>
+    </form>
+</body>
+</html>
