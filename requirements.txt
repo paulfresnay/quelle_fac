@@ -1,4 +1,0 @@
-Flask==3.0.1
-pandas==2.2.0
-nba_api==1.4.1
-gunicorn==21.2.0
