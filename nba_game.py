@@ -7,14 +7,10 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # N'oublie pas de changer cela par une clé secrète sécurisée
 
 def get_university_name(player_id):
-    try:
-        player_info = CommonPlayerInfo(player_id=player_id)
-        university_name = player_info.common_player_info.get_dict()['COLLEGE']
-        return university_name
-    except ReadTimeout as e:
-        # Gérer le timeout de l'API ici, par exemple, afficher un message d'erreur
-        print(f"Erreur de lecture de l'API : {e}")
-        return "Erreur de lecture de l'API"
+    player_info = CommonPlayerInfo(player_id=player_id)
+    player_info_data = player_info.get_data_frames()
+    university_name = player_info_data[0]['SCHOOL'].iloc[0]
+    return university_name
 
 player_list = players.get_active_players()
 # player_list = players.get_players() #Décommenter cette ligne et commenter la ligne du dessus pour jouer avec tous les joueurs de la base de données
